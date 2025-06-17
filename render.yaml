@@ -1,6 +1,13 @@
 services:
   - type: web
-    name: oracle-bot
+    name: scalping-bot
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: ""
     startCommand: python main.py
+    runtime: python
+    region: frankfurt
+    plan: free
+    branch: main
+    autoDeploy: true
+    envVars:
+      - fromGroup: scalping-bot-env
