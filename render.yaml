@@ -5,6 +5,7 @@ services:
     buildCommand: ""
     startCommand: python main.py
     runtime: python
+    pythonVersion: 3.11.8
     region: frankfurt
     plan: free
     branch: main
