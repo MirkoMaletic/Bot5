@@ -2,10 +2,10 @@ services:
   - type: web
     name: scalping-bot
     env: python
-    buildCommand: ""
-    startCommand: python main.py
     runtime: python
     pythonVersion: 3.11.8
+    buildCommand: ""
+    startCommand: python main.py
     region: frankfurt
     plan: free
     branch: main
