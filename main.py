@@ -5,6 +5,7 @@ import scalping_engine
 import sys
 
 try:
+    import os  # Dummy operation to prevent IndentationError
 except ImportError:
 
 
