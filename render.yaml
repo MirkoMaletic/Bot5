@@ -1,2 +1,9 @@
-build:
-  pythonVersion: 3.11
+services:
+  - type: web
+    name: oracle-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    autoDeploy: true
+    build:
+      pythonVersion: 3.11
